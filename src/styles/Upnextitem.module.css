@@ -1,0 +1,45 @@
+.nextContainer{
+    width: 100%;
+    height: 100%;
+}
+.movieLine{
+    width: 100%;
+    height: 148px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.picofMovie{
+    width: 140px;
+    height: 100%;
+    padding: 0px 16px;
+}
+.img{
+    width: 88px;
+    height: 130px;
+}
+.picsTitle{
+    width: 100%;
+    height: 130px;    
+    align-items: flex-start;
+}
+.playButton{
+    font-size: 45px;
+    color: white;
+}
+.timer{
+    color: white;
+    font-size: 18px;
+}
+.playLine{
+    display: flex;
+    align-items: center;
+}
+.txtMovie{
+    color: white;
+    font-size: 18px;
+}
+.subTitle{
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.529);
+}

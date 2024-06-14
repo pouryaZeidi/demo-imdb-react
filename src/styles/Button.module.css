@@ -1,0 +1,71 @@
+.buttonContainer{
+    width: 100%;
+    height: max content 40px; ;
+}
+
+
+.btn{
+    background-color:var(--grayicone);
+    width: 100%;
+    height: 36px;
+    border: 1px solid rgb(44,44,44);
+    background-color:rgb(44,44,44) ;
+    border-radius:5px;
+    padding: 0px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.1s ease-in;
+    color: #5799ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn:hover{
+    background-color: rgb(48,53,60)
+    
+}
+
+.txt{
+    margin: 0px 5px;
+}
+
+.btnInputleft{
+    background-color:var(--grayicone);
+    width: 70px;
+    height: 100%;
+    border: 1px solid rgb(122, 122, 122);
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: var(--white);
+    color: var(--gray);
+
+}
+.btnInputright{
+    background-color:var(--grayicone);
+    width: 150px;
+    height: 100%;
+    border: 1px solid rgb(122, 122, 122);
+    border-radius:5px;
+    border-top-left-radius:0;
+    border-bottom-left-radius:0;
+    color: var(--gray);
+}
+.btnYellow{
+    background-color:rgb(245,197,24);
+    width: 100%;
+    height: 36px;
+    white-space: nowrap;
+    text-wrap: nowrap;
+    transition: 0.2s;
+    font-size: 14px;
+    font-weight: 650;
+    font-family: Arial, Helvetica, sans-serif;
+    color:var(--gray);
+    cursor: pointer;
+}
+.btnYellow:hover{
+    background-color: rgb(190,153,18);
+}
+

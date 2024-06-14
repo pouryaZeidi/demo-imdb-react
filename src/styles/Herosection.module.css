@@ -1,0 +1,7 @@
+.heroContainer{
+    width: 100%;
+    height: calc(100vh - 100px);
+    min-height: 400px;
+    display: flex;
+    justify-content: space-between; 
+}
