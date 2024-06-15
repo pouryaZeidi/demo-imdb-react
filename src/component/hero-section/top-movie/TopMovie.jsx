@@ -1,16 +1,18 @@
 import React, { useEffect, useState } from 'react'
-import TopMovieData from './TopMovieData'
-import style from '@/styles/Topmovie.module.css'
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
 import response from '@/../data/topMovie.json'
-import { MoonLoader } from 'react-spinners';
-import { constantStyles } from '@/Constant/constant';
-
+import CarouselComponent from '@/component/CarouselComponent';
+import TopMovieItem from './TopMovieItem';
+import style from '@/styles/Topmovie.module.css'
 const TopMovie = () => {
   const [data,setData] = useState(null)
   const [loading , setLoading] = useState(false)
-
+  const responsive = {
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 3,
+      slidesToSlide:2
+    }
+  };
   useEffect(()=>{
     setLoading(true)
     setTimeout(() => {
@@ -20,15 +22,10 @@ const TopMovie = () => {
   },[])
 
   return (
-    <>
-    { loading ? <div className={style.container}><MoonLoader size={50} color={constantStyles.white} /></div> :  <div className={style.container}>
-      {data ?     <Carousel className={style.Carousel}>
-      {data?.map((item)=><div key={item?.id} className={style.topMovie} style={{backgroundImage:`url(${item?.img})`}} >
-            <TopMovieData data={item} />
-          </div>)}
-    </Carousel> : <h2>Data not available</h2>}
-    </div>}
-    </>
+    <div className={style.topMovie} >
+      <CarouselComponent Component={TopMovieItem} data={data} loading={loading}/>
+    </div>
+    
   )
 }
 

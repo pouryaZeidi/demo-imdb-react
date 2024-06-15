@@ -2,7 +2,25 @@ import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import HearoSection from "@/component/hero-section/HearoSection";
 
+
 const Home = () => {
+
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 12
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 2
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 8
+    }
+  };
+
   return (
     <>
       <Head>
@@ -12,7 +30,8 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <HearoSection />
+        <HearoSection/>
+
       </main>
     </>
   );

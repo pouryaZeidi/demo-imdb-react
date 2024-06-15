@@ -54,7 +54,7 @@
     cursor: pointer;
     transition: 0.3s;
 }
-.playBtn:hover {
+.yellow {
     color: yellow;
 }
 .txtPlay {

@@ -6,7 +6,7 @@ import style from '@/styles/Herosection.module.css'
 const HearoSection = () => {
   return (
     <div className={style.heroContainer} >
-        <TopMovie  />
+        <TopMovie/>
         <UpNext  />
     </div>
   )

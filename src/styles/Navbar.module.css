@@ -114,6 +114,7 @@
     opacity: 0;
     background-color: var(--gray);
     transition: .3s;
+    z-index: 2;
 }
 
 .showAll{

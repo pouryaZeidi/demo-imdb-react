@@ -5,7 +5,7 @@ import { FaRegCirclePlay } from "react-icons/fa6";
 import { GrLike } from "react-icons/gr";
 import { FcLike } from "react-icons/fc";
 
-const TopMovieData = ({data}) => {
+const TopMovieData = ({data,itemHover}) => {
   return (
     <div className={style.topmoveData}>
       <div className={style.topmovieSub}>
@@ -13,7 +13,7 @@ const TopMovieData = ({data}) => {
         <BiSolidBookmarkPlus className={style.Bookmark} />
       </div>
       <div className={style.playContainer}>
-        <FaRegCirclePlay className={style.playBtn}/>
+        <FaRegCirclePlay  className={`${style.playBtn} ${itemHover ? style.yellow : ''}`}/>
         <div className={style.playTitles}>
           <h2 className={style.txtPlay}>{data?.title}</h2>
           <p className={style.txtP}>{data?.subTitle}</p>

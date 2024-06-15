@@ -13,3 +13,9 @@
     width: 100%;
     padding: 10px 130px;
 }
+
+@media screen and (max-width:600px) {
+    .pages{
+        padding: 10px;
+    }
+}
