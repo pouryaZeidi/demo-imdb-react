@@ -1,0 +1,11 @@
+.pic1{
+    width:97%;
+    height: 222px;
+    background-position: center;
+    background-size: cover;
+
+}
+.carouselItem{
+    width: 100%;
+    height: 222px;
+}

@@ -7,11 +7,14 @@ import { FcLike } from "react-icons/fc";
 
 const TopMovieData = ({data,itemHover}) => {
   return (
-    <div className={style.topmoveData}>
+    <div className={style.topmovieData}>
       <div className={style.topmovieSub}>
         <img src={data?.img2} alt="subpadding" className={style.paddingsub} />
+        <div className={style.BookmarkDiv}>
         <BiSolidBookmarkPlus className={style.Bookmark} />
+        </div>
       </div>
+
       <div className={style.playContainer}>
         <FaRegCirclePlay  className={`${style.playBtn} ${itemHover ? style.yellow : ''}`}/>
         <div className={style.playTitles}>

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import HearoSection from "@/component/hero-section/HearoSection";
+import Section2 from "@/component/section2/Section2";
 
 
 const Home = () => {
@@ -31,6 +32,7 @@ const Home = () => {
       </Head>
       <main className={styles.main}>
         <HearoSection/>
+        <Section2/>
 
       </main>
     </>

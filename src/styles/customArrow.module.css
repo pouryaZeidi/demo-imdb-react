@@ -1,0 +1,25 @@
+.customArrow {
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    background-color: transparent;
+    font-size: 80px;
+    color: azure;
+  }
+  
+.customArrow:hover {
+    color: #fafa06;
+  }
+  
+.customRightArrow{
+    position: absolute;
+    right: 0px;
+    top: 30%;
+
+}
+.customLeftArrow{
+    left:0;
+    top: 30%;
+
+}
+  
